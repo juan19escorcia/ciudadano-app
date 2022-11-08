@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Projecto/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Projecto from './components/Projecto.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Projecto
   }
 }
 </script>
 
 <style>
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #app {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

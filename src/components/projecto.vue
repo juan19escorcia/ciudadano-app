@@ -1,26 +1,32 @@
 <template>
     <div class="contenedor1">
-        <div class="contenido">
+        <form class="contenido">
+            <h1>LOGIN</h1>
                     <div class="correo">
-                        <img src="imagen/correo-electronico.png" alt="">
+                       <video 
+                        autoplay loop muted
+                        poster="poster.png">
+                        <source src="../assets/imagen/returning-visitor-3937930-3264519.mp4" type="video/mp4">
+                        </video>
                         <input type="email" placeholder="INGRESE SU CORREO">
                     </div>
                     <div class="contraseña">
-                        <img src="candado.png" alt="">
+                        <video 
+                        autoplay loop muted
+                        poster="poster.png">
+                        <source src="../assets/imagen/mobile-accounting-5161243-4328680.mp4" type="video/mp4">
+                        </video>
                         <input type="password" placeholder="INGRESE SU CONTRASEÑA" name="password">
                         <button type="children" class="Ocultar"></button>
                     </div>
                     <div class="botones">
-                        <transition name="fade" mode="out-in">
-                            <button>INICIAR SESION</button> 
-                        </transition>
-                      
+                        <input type="submit" value="INICIAR SESION">
                          <a href="http://">REGISTRARSE</a>
                     </div>
-        </div>
+        </form>
             <div class="foto">
                 <div class="tre">
-                    juan manuel
+                   
                 </div>
             </div>
         </div>
@@ -43,7 +49,7 @@ export default {
    .contenedor1{
     background-color: aqua;
     width: 80%;
-    height: 50rem;
+    height: 40rem;
     align-items: center;
     padding: 1%;
     display: flex;
@@ -51,17 +57,17 @@ export default {
     align-items: center;
    }
    .contenido{
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     width: 48%;
-    height: 46rem;
+    height: 30rem;
     padding: 0;
     margin: 0;
     border: 2px solid rgb(255, 255, 255);
    }
    .correo{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 97%;
-    height: 8rem;
+    height: 4rem;
     padding: 1%;
     display: flex;
     border: 2px solid rgb(255, 255, 255);
@@ -72,7 +78,7 @@ export default {
     margin-top: 3%;
    }
    .contraseña{
-    background-color: rgb(0, 37, 220);
+    background-color: rgb(255, 255, 255);
     width: 97%;
     height: 8rem;
     padding: 1%;
@@ -81,7 +87,7 @@ export default {
 
    }
    .botones{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 97%;
     height: 8rem;
     padding: 1%;
@@ -96,23 +102,25 @@ export default {
  
    }
    :hover a{
-    color:aliceblue;
+    color:rgb(34, 110, 176);
    
    }
    a{
     color:blue
    }
    .foto{
-    background-color: rgb(0, 235, 4);
+    background-color: rgb(255, 255, 255);
     width: 48%;
-    height: 46rem;
+    height: 30rem;
     padding: 0;
     margin: 0;
     border: 1px solid black;
    }
-   img{
+   video{
     width: 4rem;
     height: 4rem;
+    background-color: aliceblue;
+    border-radius: 50%;
 
    }
 
