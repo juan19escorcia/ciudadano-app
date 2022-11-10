@@ -16,20 +16,20 @@
                         poster="poster.png">
                         <source src="../assets/imagen/mobile-accounting-5161243-4328680.mp4" type="video/mp4">
                         </video>
-                        <input type="password" placeholder="INGRESE SU CONTRASEÑA" name="password">
-                        <button type="children" class="Ocultar"></button>
+                        <input type="password" placeholder="INGRESE SU CONTRASEÑA" name="password"><br>
                     </div>
-                    <div class="botones">
-                        <input type="submit" value="INICIAR SESION">
-                         <a href="http://">REGISTRARSE</a>
-                    </div>
+                    <input type="checkbox">
+                    <label for="checkbox">Mostrar contraseña</label> <br>
+                    <input type="submit" value="INICIAR SESION"> <br>
+                    <a href="http://">REGISTRARSE</a>
+
         </form>
-            <div class="foto">
-                <div class="tre">
+        <div class="foto">
+            <div class="tre">
                    
-                </div>
             </div>
         </div>
+    </div>
   
 </template>
 
@@ -41,11 +41,6 @@ export default {
 
 <style>
  
-   .Ocultar{
-    width: 2rem;
-    height: 2rem;
-    margin: 3%;
-   }
    .contenedor1{
     background-color: aqua;
     width: 80%;
@@ -70,20 +65,24 @@ export default {
     height: 4rem;
     padding: 1%;
     display: flex;
-    border: 2px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
    }
-   input{
+   .correo input, .contraseña input{
     width: 80%;
     height: 2rem;
-    margin-top: 3%;
+    border: none;
    }
    .contraseña{
     background-color: rgb(255, 255, 255);
     width: 97%;
-    height: 8rem;
+    height: 4rem;
     padding: 1%;
     display: flex;
-    border: 2px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
 
    }
    .botones{
@@ -91,22 +90,14 @@ export default {
     width: 97%;
     height: 8rem;
     padding: 1%;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid red;
     
    }
-   button{
-    width: 90%;
-    height: 40%;
-    display: flex;
+    input[type="submit"]{
+    width: 45%;
+    height: 3rem;
     text-align: center;
  
-   }
-   :hover a{
-    color:rgb(34, 110, 176);
-   
-   }
-   a{
-    color:blue
    }
    .foto{
     background-color: rgb(255, 255, 255);
@@ -114,14 +105,18 @@ export default {
     height: 30rem;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
    }
+   a{
+    color:rgb(5, 255, 51);
+    padding: 5px;
+   }
+
    video{
     width: 4rem;
     height: 4rem;
     background-color: aliceblue;
     border-radius: 50%;
-
+    border: 1px solid black;
    }
 
 
